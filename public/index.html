@@ -34,7 +34,7 @@
     <div id="message">
       <h2>Welcome</h2>
       <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Customize it if you want! Now it's time to go build something extraordinary!</p>
+      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
       <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
     </div>
     <p id="load">Firebase SDK Loading&hellip;</p>
@@ -61,5 +61,29 @@
         }
       });
     </script>
+    <div class="mainDiv" align="center">
+      <h1 align="left">Firebase Web App</h1>
+      <textarea id="mainText" placeholder="Enter text here..."></textarea>
+      <button id="submitBtn" onClick ="submitClick()"><i class="fa fa-arrow-right" aria-hidden="true">Click me</i></button>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+    <script>
+      // Initilize Firebase
+      
+      const firebaseConfig = {
+        apiKey: "AIzaSyC_6gnew_pK6QPmOocU1UsKl5DwkiLTiFs",
+        authDomain: "my-first-project-here-3e42b.firebaseapp.com",
+        databaseURL: "https://my-first-project-here-3e42b.firebaseio.com",
+        projectId: "my-first-project-here-3e42b",
+        storageBucket: "my-first-project-here-3e42b.appspot.com",
+        messagingSenderId: "50159326347",
+        appID: "1:50159326347:web:2118cc303ffa6d59"
+      };
+
+    </script>
+    
+    <script src="index.js"></script>
+
   </body>
 </html>
