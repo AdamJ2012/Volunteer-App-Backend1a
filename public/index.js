@@ -1,10 +1,22 @@
 //window.alert("OKAY");
-var mainText = document.getElementById("mainText");
-var submitBtn = document.getElementById("submitBtn");
+const mainText = document.getElementById("mainText");
+const submitBtn = document.getElementById("submitBtn");
+const fireHeading = document.getElementById("fireHeading");
+
+
+const firebaseHeadingRef = firebase.database().ref().child("Heading");
+
+firebaseHeadingRef.on('value', function(datasnapshot){
+    fireHeading.innerText = datasnapshot.val();
+});
+
+
 
 function submitClick(){
     window.alert("Button pressed! Adding \"Text\" and \"Some value\" to the database.");
-    var firebaseRef = firebase.database().ref();
+    const firebaseRef = firebase.database().ref();
 
-    firebaseRef.child("Text").set("Some value");
+    const messageText = mainText.nodeValue;
+
+    firebaseRef.push().set(messageText);
 }
