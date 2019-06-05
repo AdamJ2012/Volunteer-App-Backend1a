@@ -1,0 +1,27 @@
+Mowing the Lawn
+Description-mowing the lawn
+
+Trash Pick Up
+Description-picking up trash
+
+House Clean Up
+Description-cleaning up interior of home
+
+Pool Clean Up
+Description-cleaning up pool
+
+Repair
+Description-fixing what the client specified
+
+Pet Care
+Description-taking care/watch over pet
+
+Babysitting
+Description-taking care of/watching over clients children
+
+
+
+
+
+
+
