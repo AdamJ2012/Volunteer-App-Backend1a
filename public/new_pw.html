@@ -6,9 +6,49 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta Charset="utf-8" />
 <title>Volunteer Board</title>
-
-
-
 </head>
+<body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
 
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#config-web-app -->
 
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyC_6gnew_pK6QPmOocU1UsKl5DwkiLTiFs",
+        authDomain: "my-first-project-here-3e42b.firebaseapp.com",
+        databaseURL: "https://my-first-project-here-3e42b.firebaseio.com",
+        projectId: "my-first-project-here-3e42b",
+        storageBucket: "my-first-project-here-3e42b.appspot.com",
+        messagingSenderId: "50159326347",
+        appId: "1:50159326347:web:2118cc303ffa6d59"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <div id="login_div" class="main-div">
+        <p align="right">
+            <a style="color: #000000; font-style: bold"href="index.html">Home</a> |
+            <a style="color: #000000; font-style: bold"href="volunteers.html">Volunteers</a> |
+            <a style="color: #000000; font-style: bold"href="register.html">Register</a> |
+            <a style="color: #000000; font-style: bold"><button onclick="loginCheat()">Login Cheat</button></a> |
+            <a style="color: #000000; font-style: bold"href="contact_us.html">Contact Us</a> 
+        </p>
+    </div>
+
+    <div id="user_div" class="loggedin-div">
+        <p align="right">
+            <a style="color: #000000; font-style: bold"href="index.html">Home</a> |
+            <a style="color: #000000; font-style: bold"href="volunteers.html">Volunteers</a> |
+            <a style="color: #000000; font-style: bold">Account</a> |
+            <a style="color: #000000; font-style: bold"><button onclick="logout()">Logout</button></a> |
+            <a style="color: #000000; font-style: bold"href="contact_us.html">Contact Us</a> 
+            <br />Welcome, user!
+        </p>
+    </div>
+
+    <script src="login_modifier.js"></script>
+</body>

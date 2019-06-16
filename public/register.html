@@ -6,11 +6,38 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta Charset="utf-8" />
 <title>Register</title>
-
-
-
 </head>
 <body>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+// Your web app's Firebase configuration
+var firebaseConfig = {
+    apiKey: "AIzaSyC_6gnew_pK6QPmOocU1UsKl5DwkiLTiFs",
+    authDomain: "my-first-project-here-3e42b.firebaseapp.com",
+    databaseURL: "https://my-first-project-here-3e42b.firebaseio.com",
+    projectId: "my-first-project-here-3e42b",
+    storageBucket: "my-first-project-here-3e42b.appspot.com",
+    messagingSenderId: "50159326347",
+    appId: "1:50159326347:web:2118cc303ffa6d59"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+</script>
+
+<p align="right">
+  <a style="color: #000000; font-style: bold"href="index.html">Home</a> |
+  <a style="color: #000000; font-style: bold"href="volunteers.html">Volunteers</a> |
+  <a style="color: #000000; font-style: bold"href="register.html">Register</a> |
+  <a style="color: #000000; font-style: bold">Login</a> |
+  <a style="color: #000000; font-style: bold"href="contact_us.html">Contact Us</a> 
+</p>
+
 <form action="action_page.php" style="border:1px solid #ccc">
   <div class="container">
     <h1>Register</h1>
@@ -50,7 +77,7 @@
       <button type="submit" class="signupbtn">Register</button>
     </div>
 	 <div class="container signin">
-    <p>Already have an account? <a href="volunteer_homepage.html">Sign in</a>.</p>
+    <p>Already have an account? <a href="index.html">Sign in</a>.</p>
   </div>
   </div>
   
