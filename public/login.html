@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Volunteer Board</title>
+        <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="logintest-style.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    </head>
+    <body>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#config-web-app -->
+
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyC_6gnew_pK6QPmOocU1UsKl5DwkiLTiFs",
+            authDomain: "my-first-project-here-3e42b.firebaseapp.com",
+            databaseURL: "https://my-first-project-here-3e42b.firebaseio.com",
+            projectId: "my-first-project-here-3e42b",
+            storageBucket: "my-first-project-here-3e42b.appspot.com",
+            messagingSenderId: "50159326347",
+            appId: "1:50159326347:web:2118cc303ffa6d59"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        </script>
+
+        <div id="login_div2" class="main-div2">
+            <p align="right">
+                <a style="color: #000000; font-style: bold"href="index.html">Home</a> |
+                <a style="color: #000000; font-style: bold"href="register.html">Register</a> |
+                <a style="color: #000000; font-style: bold"><button onclick="loginCheat()">Login Cheat</button></a> |
+                <a style="color: #000000; font-style: bold"href="login.html">Login</a> 
+            </p>
+        </div>
+    
+        <div id="user_div2" class="loggedin-div2">
+            <p align="right">
+                <a style="color: #000000; font-style: bold"href="index.html">Home</a> |
+                <a style="color: #000000; font-style: bold"href="volunteers.html">Volunteers</a> |
+                <a style="color: #000000; font-style: bold">Account</a> |
+                <a style="color: #000000; font-style: bold"><button onclick="logout()">Logout</button></a> 
+                <br />Welcome, user!
+            </p>
+        </div>
+
+        <div id="login_div" class="main-div">
+            <h3>Volunteer Board Login</h3>
+            <input type="email" placeholder="Email..." id="email_field" />
+            <input type="password" placeholder="Password..." id="password_field" />
+
+            <button onclick="login()">Login to Account</button>
+        </div>
+
+        <div id="user_div" class="loggedin-div">
+            <h3>Welcome User</h3>
+            <p id="user_para">Welcome to Volunteer Board. You are currently logged in.</p>
+            <button onclick="logout()">Logout</button>
+        </div>
+        
+        <script src="login_modifier.js"></script>
+    </body>
+    <!--
+        tutorials and resources:
+        https://www.youtube.com/watch?v=iKlWaUszxB4
+        Firebase Web Login - Firebase Web App Tutorial
+        TVAC Studio
+        Published on Dec 23, 2017
+
+        http://patorjk.com/software/taag/
+        Text to ASCII Art Generator (TAAG) - patorjk.com
+    -->
+</html>
